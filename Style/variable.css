@@ -1,0 +1,55 @@
+:root {
+  /* Hauptfarben */
+  --color-primary: #4a90e2; /* Blau */
+  --color-secondary: #50e3c2; /* Türkis */
+  --color-accent: #f5a623; /* Orange */
+
+  /* Textfarben */
+  --color-text-primary: #333333; /* Dunkles Grau */
+  --color-text-secondary: #666666; /* Mittleres Grau */
+  --color-text-light: #ffffff; /* Weiß */
+
+  /* Hintergrundfarben */
+  --color-background: #f7f8fa; /* Helles Grau */
+  --color-background-secondary: #ffffff; /* Weiß */
+  --color-background-dark: #1a1a1a; /* Dunkles Schwarz */
+
+  /* Border und Schatten */
+  --color-border: #e0e0e0; /* Helles Grau für Rahmen */
+  --color-shadow: rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Größen */
+  --size-container-max: 1200px;
+  --size-container-sm: 540px;
+  --size-container-md: 720px;
+  --size-container-lg: 960px;
+
+  /* Schriftgrößen */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+
+  /* Button Größen */
+  --button-padding-sm: 8px 16px;
+  --button-padding-md: 12px 24px;
+  --button-padding-lg: 16px 32px;
+
+  /* Radius */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+
+  /* Fonts */
+  --font-family-primary: "Roboto", sans-serif;
+  --font-family-secondary: "Open Sans", sans-serif;
+  --line-height: 1.6;
+}

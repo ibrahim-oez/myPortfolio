@@ -1,0 +1,230 @@
+@import url(variable.css);
+
+* {}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 0px
+    }
+}
+
+.format {
+    padding: 50px;
+
+    h1 {
+        font-size: var(--font-size-lg);
+        color: var(--color-text-primary);
+    }
+}
+
+
+
+header {
+    background-color: var(--color-background-dark);
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--color-background-dark);
+        color: var(--color-text-light);
+        padding: var(--spacing-md);
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: var(--spacing-md);
+            display: flex;
+            justify-content: end;
+            gap: var(--spacing-md);
+
+            li {
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 0.3ms ease-out;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: var(--color-text-light);
+                    font-weight: bold;
+                    font-size: 1.2rem;
+
+                    &:hover {
+                        color: var(--color-accent);
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+
+    #ueber-mich {
+        #details {
+            details {
+                transition: opacity 0.8s ease, max-height 3s ease-out;
+                overflow: hidden;
+
+                &:hover {
+                    opacity: 0.8;
+                    max-height: 500px;
+                }
+            }
+
+            summary {
+                padding-top: 5px;
+                cursor: pointer;
+                font-size: var(--font-size-lg);
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: gray;
+                }
+            }
+
+            ul {
+                cursor: pointer;
+                font-weight: bold;
+
+                & li:hover {
+                    transition: color 0.3s ease-out;
+                    color: var(--color-accent);
+                }
+            }
+        }
+    }
+
+    #projekte {
+
+        figure {
+            display: flex;
+            flex-direction: column;
+
+            figcaption {
+                font-size: var(--font-size-lg);
+                color: black;
+            }
+
+            p {
+                font-size: var(--font-size-md);
+                color: #4e4a4a;
+            }
+        }
+    }
+
+    #kontakt {
+
+        ul {
+            list-style-type: none;
+            padding: 0px;
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+        #social-media {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            display: block;
+            border: 3px solid rgb(0, 0, 0);
+        }
+    }
+
+    .grid-view {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.fa {
+    color: #4e4a4a;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 3px;
+    border-radius: 50%;
+    display: inline-block;
+    /* Für konsistente Form */
+    text-align: center;
+    /* Zentriert den Inhalt */
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.fa-twitter {
+    transition: transform 0.3s ease-in, border 0.3s ease-in;
+    /* Animation für normal und hover */
+    background-color: #1d9eee;
+    color: white;
+
+    &.fa-twitter:hover {
+        transform: scale(2);
+        transition: transform 0.3s ease-out;
+        /* Glattes Zurückskalieren */
+    }
+
+    &.fa-twitter::after {
+        content: '';
+        /* Optionaler Platzhalter für nachfolgende Effekte */
+        transition: 0.3s ease-out;
+        /* Nutzt bereits äußere Definition */
+    }
+}
+
+.fa-linkedin {
+    transition: transform 0.3s ease-in, border 0.3s ease-in;
+    /* Animation für normal und hover */
+    background-color: #0b65c3;
+    color: white;
+    font-size: 3px;
+
+    &.fa-linkedin:hover {
+        transform: scale(2);
+        transition: transform 0.3s ease-out;
+        /* Glattes Zurückskalieren */
+    }
+
+    &.fa-linkedin::after {
+        content: '';
+        /* Optionaler Platzhalter für nachfolgende Effekte */
+        transition: 0.3s ease-out;
+        /* Nutzt bereits äußere Definition */
+    }
+}
+
+.fa-github {
+    transition: transform 0.3s ease-in, border 0.3s ease-in;
+    /* Animation für normal und hover */
+    background-color: #050505;
+    color: white;
+
+    &.fa-github:hover {
+        transform: scale(2);
+        transition: transform 0.3s ease-out;
+        /* Glattes Zurückskalieren */
+    }
+
+    &.fa-github::after {
+        content: '';
+        /* Optionaler Platzhalter für nachfolgende Effekte */
+        transition: 0.3s ease-out;
+        /* Nutzt bereits äußere Definition */
+    }
+}
